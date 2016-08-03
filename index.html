@@ -2,11 +2,166 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <a class="logo-link">
+        <img class="logo-picture" src="http://placehold.it/138x70" width="138" height="70" alt="Sedona">
+      </a>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="#">Информация</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Фото и видео</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Карта штата</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>            
+    </header>
+    
+    <div class="promo">
+      <img src="http://placehold.it/458x352" width="458" height="352" alt="Welcome to Sedona">
+    </div>
+    
+    <!-- Статья "Причины" -->
+    <article class="best-reasons">
+      <div class="reasons-title-container">
+        <h1 class="reasons-title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="reasons-description">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+        </p>
+      </div>
+      <section class="reason reason-1-container">
+        <div class="reason-item reason-1">
+          <h2 class="reason-title">
+            Настоящий городок
+          </h2>
+          <span>- №1 -</span>
+          <p class="reason-description">
+            Седона - не аттракцион для туристов, там течет своя жизнь
+          </p>
+        </div>
+        <div class="reason-image reason-1-image"></div>
+      </section>
+      <section class="features">
+        <div class="feature-item">
+          <h2 class="feature-title">Жилье</h2>
+          <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="feature-item">
+          <h2 class="feature-title">Еда</h2>
+          <p class="feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="feature-item">
+          <h2 class="feature-title">Сувениры</h2>
+          <p class="feature-description">Не только китайского, но и местного производства!</p>
+        </div>
+      </section>
+      <section class="reason reason-2-container">
+        <div class="reason-image reason-2-image"></div>
+        <div class="reason-item reason-2">
+          <h2 class="reason-title">
+            Там есть мост дьявола
+          </h2>
+          <span>- №2 -</span>
+          <p class="reason-description">
+            Да, по нему можно пройти! Если, конечно, вы осмелитесь
+          </p>
+        </div>        
+      </section>
+      <section class="reasons-block">
+        <div class="reason-item reason-3">
+          <h2 class="reason-title">Небольшая площадь</h2>
+          <span>- №3 -</span>
+          <p class="reason-description">Все достопримечательности  находятся очень близко</p>
+        </div>
+        <div class="reason-item reason-4">
+          <h2 class="reason-title">Красивая дорога</h2>
+          <span>- №4 -</span>
+          <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="reason-item reason-5">
+          <h2 class="reason-title">Мало туристов</h2>
+          <span>- №5 -</span>
+          <p class="reason-description">Большинство едет в Град Каньон и толпится там</p>
+        </div>
+      </section>
+    </article><!-- Конец статьи "Причины" -->
+    
+    <section class="search-hotels">
+      <span class="search-hotels-title">
+        Заинтересовались?
+      </span>
+      <p class="search-hotels-description">
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
+      </p>
+      <a class="search-hotels-btn" href="#">
+        Поиск гостиницы в Седоне
+      </a>
+    </section>
+    
+    <div class="map">
+      <img src="http://placehold.it/1200x593" width="1200" height="593" alt="Карта Седоны">
+    </div>
+    
+    <footer class="footer">
+      <div class="footer-hashtag">#visitsedona</div>
+      <div class="footer-social">
+        <a class="btn-social btn-twitter" href="#">Twitter</a>
+        <a class="btn-social btn-facebook" href="#">Facebook</a>
+        <a class="btn-social btn-youtube" href="#">Youtube</a>
+      </div>
+      <div class="footer-designed">
+        <span>Website by</span>
+        <a href="https://htmlacademy.ru">
+          <img src="http://placehold.it/113x39" width="113" height="39" alt="html academy">
+        </a>
+      </div>
+    </footer>
+    
+    <!-- Модальное окно "Поиск гостиницы в Седоне" -->
+    <div class="modal-content modal-search-hotels">           
+      <form action="#" method="post">
+        <div class="arrive-date">
+          <label for="arrive-date">Дата заезда:</label>
+          <input type="date" name="arrive-date" id="arrive-date" value="24 апреля 2016">
+          <button class="calendar" type="button" title="Календарь">Календарь</button>
+        </div>
+        <div class="departure-date">
+          <label for="departure-date">Дата отъезда:</label>
+          <input type="date" name="departure-date" id="departure-date" value="4 июля 2016">
+          <button class="calendar" type="button" title="Календарь">Календарь</button>
+        </div>
+        <div class="adults">
+          <label for="adults">Взрослые:</label>
+          <div class="quantity-controls">
+            <button class="quantity-less" type="button" title="Меньше">Меньше</button>
+            <input type="number" name="adults" id="adults" value="2">
+            <button class="quantity-more" type="button" title="Больше">Больше</button>
+          </div>          
+        </div>
+        <div class="children">
+          <label for="children">Дети:</label>
+          <div class="quantity-controls">
+            <button class="quantity-less" type="button" title="Меньше">Меньше</button>
+            <input type="number" name="children" id="children" value="0">
+            <button class="quantity-more" type="button" title="Больше">Больше</button>
+          </div>          
+        </div>        
+        <button class="modal-content-search" type="submit" title="Найти">
+          Найти
+        </button> 
+      </form>      
+    </div><!-- Конец модального окна "Поиск гостиницы в Седоне"-->
   </body>
 </html>
