@@ -1,5 +1,17 @@
+/* Временно для работы с сеткой */
+.shadow-container{  
+  background-color: green;
+}
+.reason-item{
+  background-color: lightpink;
+}
+.reason-item:nth-child(2n){
+  background-color: burlywood;
+}
+
+
 body{
-  font-size: 14px;  
+  font-size: 14px;
   line-height: 21px;
   color: #000000;
   font-weight: normal;
@@ -7,12 +19,121 @@ body{
   text-transform: uppercase;
 }
 h1{
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 h2{
+  margin: 0;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.shadow-container{
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-header{
+  position: relative;
+}
+.menu-list{
+  padding: 0;
+  font-size: 0;
+}
+.menu-item{
+  display: inline-block;
+  width: 20%;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  vertical-align: top;
+  font-size: 14px;
+}
+/*Для отступа между пунктами посередине меню*/
+.menu-item:nth-child(4n-2){
+  margin-right: 8%;
+}
+/*Для отступа слева меню, правый отступ сам автоматически рассчитается*/
+.menu-item:nth-child(4n+1){
+  margin-left: 6%;
+}
+/*Выравнивание каждых первых двух пунктов меню по левому краю*/
+.menu-item:nth-child(4n-3),
+.menu-item:nth-child(4n-2){
+  text-align: left;
+}
+/*Выравнивание каждых вторых двух пунктов меню по правому краю*/
+.menu-item:nth-child(4n-1),
+.menu-item:nth-child(4n){
+  text-align: right;
+}
+.logo-picture{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;  
+}
+.welcome{
+  height: 508px;
+  text-align: center;  
+  background:
+    url("../img/index-mask-bg.png") no-repeat center bottom,
+    #8b99a2 url("../img/in1dex-welcome-bg.jpg") no-repeat;
+  background-size: auto, cover;
+}
+.welcome img{
+  margin-top: 76px;
+}
+.reasons-title,
+.reasons-description{
+  width: 576px;
+  margin: 0 auto;
+  text-align: center;
+}
+.reasons-title{  
+  margin-top: 60px;
+}
+.reasons-description{
+  margin-top: 27px;
+  margin-bottom: 51px;
+  line-height: 26px;
+}
+.reason-container,
+.features,
+.reasons-block{
+  height: 256px;
+}
+.reason-item{
+  float: left;
+  width: 33%;
+  height: 100%;
+  vertical-align: top;
+  text-align: center;
+}
+.features .reason-item:nth-child(2),
+.reasons-block .reason-item:nth-child(2){
+  width: 34%;
+}
+.features .reason-item{
+  min-height: 330px;
+}
+.reason-image{
+  float: left;
+  width: 67%;
+  height: 100%;
+}
+.reason-town-image{
+  background: #989484 url("../img/reason-town.jpg") no-repeat center center;
+  background-size: 100% auto;
+}
+.reason-bridge-image{
+  background: #c38b6d url("../img/reason-bridge.jpg") no-repeat center center;
+  background-size: 100% auto;
 }
