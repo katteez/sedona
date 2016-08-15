@@ -114,7 +114,7 @@ h2{
   font-size: 14px;
   text-align: center;
 }
-.menu-item:nth-child(4n-2){
+.menu-item:nth-child(2){
   margin-right: 20%;
 }
 .logo-picture{
@@ -128,6 +128,7 @@ h2{
 .welcome{  
   height: 510px;
   margin-bottom: 58px;
+  color: #ffffff;
   text-align: center;  
   background:
     url("../img/index-mask-bg.png") no-repeat center bottom,
@@ -135,8 +136,8 @@ h2{
   background-size: auto, cover;
 }
 .welcome img{
-  width: 458px;
-  height: 352px; 
+  min-width: 458px;
+  min-height: 352px;
   margin-top: 76px;
 }
 
@@ -154,35 +155,59 @@ h2{
   margin-bottom: 51px;
   line-height: 26px;
 }
-.reason-container,
-.reasons-block{
-  height: 256px;
-}
-.features{
-  height: 330px;
-}
 .reason-item{
   float: left;
-  width: 33%;
-  height: 100%;
-  text-align: center;
+  width: calc(100%/3);
+  padding-top: 54px;
+  padding-bottom: 52px;
+  box-sizing: border-box;
+  text-align: center;  
 }
-.features .reason-item:nth-child(2),
-.reasons-block .reason-item:nth-child(2){
-  width: 34%;
+.features .reason-item{
+  padding-top: 161px;
+  padding-bottom: 82px;
+}
+.reasons-block .reason-item{
+  padding-top: 47px;
+  padding-bottom: 59px;
 }
 .reason-image{
   float: left;
-  width: 67%;
+  width: calc(100%/3*2);
   height: 100%;
 }
 .reason-town-image{
+  min-height: 256px;
   background: #989484 url("../img/reason-town.jpg") no-repeat center center;
   background-size: 100% auto;
 }
 .reason-bridge-image{
+  min-height: 256px;
   background: #c38b6d url("../img/reason-bridge.jpg") no-repeat center center;
   background-size: 100% auto;
+}
+.reason-title{
+  width: 37.6%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.features .reason-title{
+  margin-bottom: 24px;
+}
+.reason-number{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.reason-description{
+  width: 76%;
+  margin: 0 auto;
+}
+.features .reason-description{
+  width: 71%;
+}
+.reasons-block .reason-description{
+  width: 65%;
 }
 
 /********** Секция "Поиск гостиниц" **********/
@@ -227,7 +252,7 @@ h2{
 }
 .map img{
   width: 1200px;
-  height: 593px;
+  min-height: 593px;
 }
 
 /********** Фильтр **********/
@@ -326,7 +351,7 @@ h2{
 .hotel-title{
   margin-bottom: 12px;
   font-size: 21px;
-  line-height: 16px; /* ??? */
+  line-height: 16px;
 }
 .hotel-type-price{
   margin-bottom: 15px;
@@ -351,8 +376,9 @@ h2{
 .footer-social,
 .footer-designed{
   display: inline-block;
-  width: 33%;
+  width: calc(100%/3);
   padding: 44px 0;
+  box-sizing: border-box;
   vertical-align: baseline;
   text-align: center;
 }
