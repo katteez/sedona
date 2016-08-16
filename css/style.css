@@ -47,17 +47,25 @@ h2{
   font-weight: bold;
 }
 .arrive-date,
-.departure-date{
-  position: relative;
-  padding-bottom: 40px;    
+.departure-date{  
+  margin-bottom: 41px;    
 }
-.arrive-date input,
-.departure-date input{
+.modal-input-container{
+  position: relative;
   float: right;
   width: 75%;
 }
-.arrive-date .calendar,
-.departure-date .calendar{
+.arrive-date input,
+.departure-date input{
+  width: 100%;
+  border: none;
+  padding: 6px 0;
+  padding-left: 11px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+.calendar{
   position: absolute;
   top: 0;
   right: 0;
@@ -69,11 +77,14 @@ h2{
 .adults{
   float: left;
   width: 50%;
-  margin-right: 11%;
 }
 .children{
   float: right;
-  width: 39%;
+  width: 50%;
+}
+.children label{
+  display: inline-block;
+  margin-left: 22%;
 }
 .quantity-controls{
   float: right;
