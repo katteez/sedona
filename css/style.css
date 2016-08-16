@@ -158,46 +158,31 @@ h2{
 .reason-item{
   float: left;
   width: calc(100%/3);
+  min-height: 256px;
   padding-top: 54px;
-  padding-bottom: 52px;
   box-sizing: border-box;
-  text-align: center;  
+  text-align: center;
 }
 .features .reason-item{
+  min-height: 330px;
   padding-top: 161px;
-  padding-bottom: 82px;
 }
 .reasons-block .reason-item{
   padding-top: 47px;
-  padding-bottom: 59px;
-}
-.reason-image{
-  float: left;
-  width: calc(100%/3*2);
-  height: 100%;
-}
-.reason-town-image{
-  min-height: 256px;
-  background: #989484 url("../img/reason-town.jpg") no-repeat center center;
-  background-size: 100% auto;
-}
-.reason-bridge-image{
-  min-height: 256px;
-  background: #c38b6d url("../img/reason-bridge.jpg") no-repeat center center;
-  background-size: 100% auto;
 }
 .reason-title{
-  width: 37.6%;
+  width: 50%;
   margin: 0 auto;
-  margin-bottom: 25px;
-}
-.features .reason-title{
   margin-bottom: 24px;
+  text-align: center;
+}
+.reason-wide-title{
+  width: 60%;
 }
 .reason-number{
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .reason-description{
   width: 76%;
@@ -207,7 +192,23 @@ h2{
   width: 71%;
 }
 .reasons-block .reason-description{
-  width: 65%;
+  width: 68%;
+}
+.reasons-block .reason-narrow-description{
+  width: 62%;
+}
+.reason-image{
+  float: left;
+  width: calc(100%/3*2);
+  min-height: 256px;
+}
+.reason-town-image{
+  background: #989484 url("../img/reason-town.jpg") no-repeat center center;
+  background-size: 100% auto;
+}
+.reason-bridge-image{
+  background: #c38b6d url("../img/reason-bridge.jpg") no-repeat center center;
+  background-size: 100% auto;
 }
 
 /********** Секция "Поиск гостиниц" **********/
