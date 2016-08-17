@@ -328,22 +328,29 @@ h2{
   line-height: 18px;
 }
 .sorting-filter{
-  display: inline-block;
   padding: 0;
-  vertical-align: baseline;
   font-size: 0;
 }
 .sorting-filter li{
-  display: inline-block;
+  display: inline-block;  
   vertical-align: baseline;
   font-size: 12px;
   line-height: 18px;
 }
+.sorting-type{
+  display: inline-block;
+  vertical-align: baseline;  
+}
 .sorting-type li{
-  margin-right: 33px;
+  width: 80px;
 }
 .sorting-destination{
   float: right;
+  width: 100px;
+  text-align: right;
+}
+.sorting-up{
+  margin-right: 12px;
 }
 
 /********** Карточка отеля **********/
@@ -359,6 +366,7 @@ h2{
 }
 .hotel-description{
   float: left;
+  width: 360px;
 }
 .hotel-title{
   margin-bottom: 12px;
@@ -370,7 +378,9 @@ h2{
 }
 .hotel-rating{
   float: right;
+  width: 240px;
   margin-top: 66px;
+  text-align: right;
 }
 
 /********** Футер **********/
