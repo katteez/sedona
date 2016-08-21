@@ -1,4 +1,5 @@
 body{
+  
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -28,6 +29,7 @@ h2{
   min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 40px 2px #dbdbdb;
 }
 
 /********** Кнопки **********/
@@ -177,7 +179,6 @@ input[type="checkbox"]:disabled + label{
 .departure-date label{
   display: inline-block;
   min-width: 111px;
-  margin-top: -2px;
   vertical-align: baseline;
   font-size: 14px;
   line-height: 26px;
@@ -186,7 +187,7 @@ input[type="checkbox"]:disabled + label{
 .modal-input-container{
   position: relative;
   display: inline-block;
-  width: 346px
+  width: 346px;
 }
 .arrive-date input,
 .departure-date input{
