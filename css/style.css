@@ -456,8 +456,12 @@ input[type="checkbox"]:disabled + label{
   background: url("../img/sprite.png") no-repeat -326px -132px;
 }
 .reasons-block .reason-item{
+  width: 33%;
   padding-top: 47px;
   background-color: #eeeeee;
+}
+.reasons-block .reason-area{
+  width: 34%;
 }
 .reason-title{
   width: 50%;
