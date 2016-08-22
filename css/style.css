@@ -1,5 +1,4 @@
-body{
-  
+body{  
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -146,6 +145,16 @@ input[type="checkbox"]:disabled + label{
   cursor: default;
 }
 
+/***** Анимация "Прыжок cнизу" для окна "Поиск гостиницы" *****/
+@keyframes jumpBottom{
+  from{
+    transform: translate(-50%, 2000px);
+  }  
+  to{
+    transform: translate(-50%, 100%);
+  }
+}
+
 /********** Модальное окно "Поиск гостиницы" **********/
 .modal-content{
   padding-top: 55px;
@@ -153,19 +162,25 @@ input[type="checkbox"]:disabled + label{
   padding-left: 57px;
   padding-right: 53px;  
   background-color: #ffffff;
+  box-shadow: 0 7px 15px 1px rgba(0, 1, 1, 0.15);
+}
+.modal-search-hotels.show{
+  display: block;
+  animation: jumpBottom 0.3s;
 }
 .modal-search-hotels{
-  content: "";
   position: absolute;
+  content: "";  
   bottom: 0;
   left: 50%;  
   transform: translate(-50%, 100%);
-  display: block;
+  display: none;
   width: 568px;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
+  z-index: 10;
 }
 .arrive-date{
   margin-bottom: 29px;
@@ -188,6 +203,7 @@ input[type="checkbox"]:disabled + label{
   position: relative;
   display: inline-block;
   width: 346px;
+  vertical-align: baseline;
 }
 .arrive-date input,
 .departure-date input{
@@ -545,11 +561,10 @@ input[type="checkbox"]:disabled + label{
 
 /********** Карта **********/
 .map{
+  width: 100%;
+  height: 593px;
   overflow: hidden;
-}
-.map img{
-  width: 1200px;
-  min-height: 593px;
+  background: #d1e0b5 url(../img/map.jpg) no-repeat;
 }
 
 /********** Фильтр **********/
@@ -621,8 +636,7 @@ input[type="checkbox"]:disabled + label{
 .max-cost{
   display: inline-block;
   width: 30%;
-  padding-left: calc(23% - 10px);
-  
+  padding-left: calc(23% - 10px);  
   vertical-align: top;
   font-size: 14px;
   line-height: 32px;
@@ -829,6 +843,7 @@ input[type="checkbox"]:disabled + label{
 .hotel-type,
 .hotel-price{
   display: inline-block;
+  vertical-align: baseline;
   font-size: 14px;
   line-height: 21px;
 }

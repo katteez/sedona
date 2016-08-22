@@ -5,7 +5,7 @@
     <title>Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="shadow-container">
@@ -157,9 +157,7 @@
         </div><!-- Конец модального окна "Поиск гостиницы"-->
       </section>
       
-      <div class="map">
-        <img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
-      </div>
+      <div class="map" id="map"></div>
 
       <footer class="footer footer-on-content">
         <div class="footer-hashtag">#visitsedona</div>
@@ -176,5 +174,8 @@
         </div>
       </footer>
     </div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxVKs-AB0ez8hQ-HlrQ7JVhPaU-Qfyfkg" async defer></script>
+    <script src="js/popup.min.js"></script>
   </body>
 </html>
