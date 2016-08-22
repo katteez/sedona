@@ -563,7 +563,6 @@ input[type="checkbox"]:disabled + label{
 .map{
   width: 100%;
   height: 593px;
-  overflow: hidden;
   background: #d1e0b5 url(../img/map.jpg) no-repeat;
 }
 
