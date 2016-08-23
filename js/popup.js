@@ -25,7 +25,7 @@ if (btnOpenClose && popupSearch) {
   
   btnOpenClose.addEventListener("click", function (event) {
     event.preventDefault();
-    if (!popupSearch.classList.contains("show")){      
+    if (!popupSearch.classList.contains("show")){
       popupSearch.classList.add("show");
     }
     else {
