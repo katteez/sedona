@@ -302,7 +302,7 @@ input[type="checkbox"]:disabled + label{
 .quantity-controls input{
   display: inline-block;
   width: 34px;
-  border: none;
+  border: 2px solid #f2f2f2;
   padding: 6px 0;
   padding-left: 11px;
   box-sizing: border-box;
@@ -313,9 +313,15 @@ input[type="checkbox"]:disabled + label{
   background: none;
   outline: none;
 }
+.adults input:hover,
+.children input:hover{
+  border-color: #ebebeb;
+  background-color: #ebebeb;
+}
 .adults input:focus,
 .children input:focus{
-  color: #81b3d2;
+  border-color: #e5e5e5;
+  background-color: #ffffff;
 }
 .quantity-less,
 .quantity-more{
