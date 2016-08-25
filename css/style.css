@@ -196,13 +196,14 @@ input[type="checkbox"]:disabled + label{
   font-weight: bold;
   z-index: 10;
 }
-.arrive-date{
+.arrive-date,
+.departure-date{
+  min-height: 38px;
   margin-bottom: 29px;
   font-size: 0;
 }
 .departure-date{
   margin-bottom: 30px;
-  font-size: 0;
 }
 .arrive-date label,
 .departure-date label{
@@ -217,11 +218,13 @@ input[type="checkbox"]:disabled + label{
   position: relative;
   display: inline-block;
   width: 346px;
+  height: 38px;
   vertical-align: baseline;
 }
 .arrive-date input,
 .departure-date input{
   width: 100%;
+  height: inherit;
   border: 2px solid #f2f2f2;
   padding: 4px 0;
   padding-left: 11px;
@@ -293,6 +296,7 @@ input[type="checkbox"]:disabled + label{
 .quantity-controls{
   float: right;
   width: 114px;
+  height: 38px;
   font-size: 0;
   background-color: #f2f2f2;
 }
@@ -302,6 +306,7 @@ input[type="checkbox"]:disabled + label{
 .quantity-controls input{
   display: inline-block;
   width: 34px;
+  height: inherit;
   border: 2px solid #f2f2f2;
   padding: 4px 0;
   padding-left: 11px;
@@ -328,6 +333,7 @@ input[type="checkbox"]:disabled + label{
   position: relative;
   display: inline-block;
   width: 40px;
+  height: inherit;
   border: none;
   padding: 6px 0;
   vertical-align: top;
@@ -340,8 +346,8 @@ input[type="checkbox"]:disabled + label{
 .quantity-more::before{
   position: absolute;
   content: "";
-  top: 19px;
-  left: 20px;
+  top: 50%;
+  left: 50%;
   width: 11px;
   height: 3px;
   -webkit-transform: translate(-50%, -50%);
@@ -351,8 +357,8 @@ input[type="checkbox"]:disabled + label{
 .quantity-more::after{
   position: absolute;
   content: "";
-  top: 19px;
-  left: 20px;
+  top: 50%;
+  left: 50%;
   width: 3px;
   height: 11px;
   -webkit-transform: translate(-50%, -50%);
@@ -459,14 +465,22 @@ input[type="checkbox"]:disabled + label{
   box-sizing: border-box;
   text-align: center;
 }
-.reason-container .reason-item{
+.reason-container{
+  min-height: 256px;
   background-color: #81b3d2;
+}
+.reason-container .reason-item{
+  background-color: transparent;
   color: #ffffff;
+}
+.features{
+  background-color: #ffffff;
 }
 .features .reason-item{
   position: relative;
   min-height: 330px;
   padding-top: 161px;
+  background-color: transparent;
 }
 .reason-house::before{
   content: "";
@@ -501,9 +515,12 @@ input[type="checkbox"]:disabled + label{
   height: 76px;
   background: url("../img/sprite.png") no-repeat -326px -132px;
 }
+.reasons-block{
+  background-color: #eeeeee
+}
 .reasons-block .reason-item{
   padding-top: 47px;
-  background-color: #eeeeee;
+  background-color: transparent;
 }
 .reason-title{
   width: 50%;
@@ -533,7 +550,7 @@ input[type="checkbox"]:disabled + label{
   width: 65%;
 }
 .reasons-block .reason-description{
-  width: 70%
+  width: 70%;
 }
 .reasons-block .reason-narrow-description{
   width: calc(85% - 70px);
@@ -668,6 +685,7 @@ input[type="checkbox"]:disabled + label{
 .max-cost{
   display: inline-block;
   width: 30%;
+  height: inherit;
   padding-left: calc(23% - 10px);
   vertical-align: top;
   font-size: 14px;
@@ -679,6 +697,7 @@ input[type="checkbox"]:disabled + label{
 }
 .cost-controls input{
   width: 66%;
+  height: inherit;
   padding: 0;
   border: 0;
   vertical-align: top;
