@@ -303,7 +303,7 @@ input[type="checkbox"]:disabled + label{
   display: inline-block;
   width: 34px;
   border: 2px solid #f2f2f2;
-  padding: 6px 0;
+  padding: 4px 0;
   padding-left: 11px;
   box-sizing: border-box;
   vertical-align: top;
@@ -453,7 +453,7 @@ input[type="checkbox"]:disabled + label{
 }
 .reason-item{
   float: left;
-  width: calc(100%/3);
+  width: 33.3333333333%;
   min-height: 256px;
   padding-top: 54px;
   box-sizing: border-box;
@@ -502,12 +502,8 @@ input[type="checkbox"]:disabled + label{
   background: url("../img/sprite.png") no-repeat -326px -132px;
 }
 .reasons-block .reason-item{
-  width: 33%;
   padding-top: 47px;
   background-color: #eeeeee;
-}
-.reasons-block .reason-area{
-  width: 34%;
 }
 .reason-title{
   width: 50%;
@@ -524,17 +520,23 @@ input[type="checkbox"]:disabled + label{
   margin-bottom: 21px;
 }
 .reason-description{
-  width: 76%;
+  width: calc(75% + 2px);
   margin: 0 auto;
 }
+.reason-wide-description{
+  width: calc(85% - 35px);
+}
 .features .reason-description{
-  width: 72%;
+  width: calc(90% - 65px);
+}
+.features .reason-narrow-description{
+  width: 65%;
 }
 .reasons-block .reason-description{
-  width: 68%;
+  width: 70%
 }
 .reasons-block .reason-narrow-description{
-  width: 62%;
+  width: calc(85% - 70px);
 }
 .reason-image{
   float: left;
@@ -943,18 +945,17 @@ input[type="checkbox"]:disabled + label{
 .footer-social,
 .footer-designed{
   display: inline-block;
-  width: calc(100%/3);
+  width: 33%;
+  padding-right: 5px;
   box-sizing: border-box;
   vertical-align: middle;
   text-align: center;
 }
 .footer-hashtag{
+  width: 34%;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-}
-.footer-social{
-  padding-left: 2px;
 }
 .btn-social{
   position: relative;
